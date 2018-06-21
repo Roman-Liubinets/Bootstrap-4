@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>JS Collapse</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap-theme.min.css">
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <button class="btn btn-link" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+    <div class="collapse" id="hide">
+        Какой либо скрытий текст
+    </div>
+
+    
+        <div class="card bg-info">
+            <div class="card-header">
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый</a>
+            </div>
+            <div id="el1" class="collapse in">
+                <div class="card-body">
+                    sdasdasdasdasdasdas
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-danger">
+            <div class="card-header">
+                <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Второй</a>
+            </div>
+            <div id="el2" class="collapse">
+                <div class="card-body">
+                    dasdasdasdasdasd
+                </div>
+            </div>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
