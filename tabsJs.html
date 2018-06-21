@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tabs.js</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap-theme.min.css">
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a href="#home" class="nav-link" data-toggle="pill">Домой</a></li>
+            <li class="nav-item"><a href="#profile" class="nav-link" data-toggle="pill">Профиль</a></li>
+            <li class="nav-item"><a href="#message" class="nav-link active" data-toggle="pill">Сообщения</a></li>
+            <li class="nav-item"><a href="#settings" class="nav-link" data-toggle="pill">Настройки</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="home">Вкладка домой</div>
+            <div class="tab-pane" id="profile">Вкладка профиля</div>
+            <div class="tab-pane active" id="message">Вкладка сообщения</div>
+            <div class="tab-pane" id="settings">Вкладка настройки</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script>
+    $("a[data-toggle='pill']").on("shown.bs.tab", function(e) {
+        console.log(e.target);
+        console.log(e.relatedTarget);
+    })
+    </script>
+</body>
+
+</html>
